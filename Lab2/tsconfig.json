@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2015", "DOM"],
+    "module": "commonjs",
+    "outDir": "js",
+    "strict": true,
+    "target": "ES6"
+  },
+  "include": ["ts"]
+}
