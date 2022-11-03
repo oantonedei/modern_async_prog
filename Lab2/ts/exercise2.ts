@@ -3,7 +3,7 @@ let bankAccount: {
     deposit(value: number): void;
 } = {
     money: 2000,
-    deposit(value: number) {
+    deposit(value: number): void {
         this.money += value;
     }
 };
