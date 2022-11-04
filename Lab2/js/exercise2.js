@@ -1,4 +1,6 @@
 "use strict";
+;
+;
 let bankAccount = {
     money: 2000,
     deposit(value) {
