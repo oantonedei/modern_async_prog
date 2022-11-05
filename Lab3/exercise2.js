@@ -1,34 +1,4 @@
-// class Observer1 {
-//   //subscriber
-//   constructor(firstname, lastname) {
-//     this.firstname = firstname;
-//     this.lastname = lastname;
-//   }
-//   next(message) {
-//     console.log(`${this.firstname} ${this.lastname}: ${message}`);
-//   }
-// }
-
-// class Subject1 {
-//   //Amazon
-//   constructor() {
-//     this.observerList = [];
-//   }
-//   subscribe(...observers) {
-//     //observer - think as subscriber to Amazon
-//     this.observerList.push(...observers); //
-//   }
-
-//   notify(message) {
-//     this.observerList.forEach((observer) => observer.next(message));
-//   }
-
-//   unsubscribe(observer) {
-//     //    this.observerList = this.observerList.filter(ob => ob !== observer);
-//     let index = this.observerList.findIndex((ob) => ob === observer);
-//     this.observerList.splice(index, 1);
-//   }
-// }
+//Using Observer Design Pattern
 
 class Subject {
   constructor() {

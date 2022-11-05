@@ -1,8 +1,5 @@
 //Using Module Design Pattern
-/**
- * Objectives:
- *
- */
+
 const shoppingCart = (function () {
   let basket = [];
   return {
@@ -14,7 +11,6 @@ const shoppingCart = (function () {
         basket.forEach((it) => {
           if (it.id === item.id) {
             it = item;
-            //it.count = item.count;
             updated = true;
           }
         });
