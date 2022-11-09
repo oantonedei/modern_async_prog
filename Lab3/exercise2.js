@@ -13,13 +13,9 @@ class Subject {
     }
   }
   emit(event, message) {
-    for (const key in this.events) {
-      if (key === event) {
-        this.events[key].forEach((fn) => {
-          fn(message);
-        });
-      }
-    }
+    this.events[event].forEach((fn) => {
+      fn(message);
+    });
   }
 }
 
