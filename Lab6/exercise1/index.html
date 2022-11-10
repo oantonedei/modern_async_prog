@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <div id="block1">
+        <img style="width: 500px; height: auto" src="image1.jpg" alt="Dog" />
+        <p>Billy the dog</p>
+      </div>
+      <button
+        id="btn"
+        style="font-size: 30px; padding: 10px; border-radius: 10px"
+      >
+        Swap
+      </button>
+      <br />
+      <br />
+      <div id="block2">
+        <img style="width: 500px; height: auto" src="image2.jpg" alt="Cat" />
+        <p>Jin the cat</p>
+      </div>
+    </div>
+    <script>
+      let btn = document.getElementById("btn");
+      btn.onclick = function () {
+        let temp = document.getElementById("block1").innerHTML;
+        document.getElementById("block1").innerHTML =
+          document.getElementById("block2").innerHTML;
+        document.getElementById("block2").innerHTML = temp;
+      };
+    </script>
+  </body>
+</html>
