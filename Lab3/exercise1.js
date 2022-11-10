@@ -4,19 +4,11 @@ const shoppingCart = (function () {
   let basket = [];
   return {
     upsertItem: function (item) {
-      if (basket.length < 1) {
-        basket.push(item);
+      const index = basket.findIndex((it) => it.id === item.id);
+      if (index > -1) {
+        basket[index] = item;
       } else {
-        let updated = false;
-        basket.forEach((it) => {
-          if (it.id === item.id) {
-            it = item;
-            updated = true;
-          }
-        });
-        if (!updated) {
-          basket.push(item);
-        }
+        basket.push(item);
       }
     },
     getItemsCount: function () {

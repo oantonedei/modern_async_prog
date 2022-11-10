@@ -2,16 +2,18 @@
 
 let cache = {};
 function fib(n) {
+  let value = 0;
   if (n in cache) {
-    return cache[n];
+    value = cache[n];
   } else {
     if (n <= 1) {
-      return n;
+      value = n;
     } else {
-      cache[n] = fib(n - 1) + fib(n - 2);
-      return cache[n];
+      value = fib(n - 1) + fib(n - 2);
+      cache[n] = value;
     }
   }
+  return value;
 }
 
 console.time("fib");
