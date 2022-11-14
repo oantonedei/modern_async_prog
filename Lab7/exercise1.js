@@ -2,9 +2,9 @@ const isPrime = (num) =>
   new Promise((resolve, reject) => {
     setTimeout(function () {
       for (let i = 2, s = Math.sqrt(num); i <= s; i++) {
-        if (num % i === 0) return reject({ prime: false });
+        if (num % i === 0) reject({ prime: false });
       }
-      return resolve({ prime: num > 1 });
+      resolve({ prime: num > 1 });
     }, 500);
   });
 
