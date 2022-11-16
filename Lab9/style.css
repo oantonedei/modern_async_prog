@@ -1,0 +1,29 @@
+body{
+    display: block;
+}
+.outter-display{
+    margin-left: 30%;
+}
+.display{
+    width: 500px; 
+    border: 1px solid rgba(245, 147, 67, 0.9);
+}
+.display-container{
+    padding: 5%; 
+    border-top: 3px solid rgba(157, 157, 157, 0.3);
+}
+.img{
+    width: 150px;
+    border-radius: 50%;
+}
+.container{
+    float: right;
+}
+.btn{
+    padding: 5px;
+    background: rgba(245, 147, 67, 0.9);
+    color: white;
+    border-radius: 3px;
+    margin-left: 45%;
+    margin-bottom: 5%;
+}
