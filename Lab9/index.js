@@ -7,7 +7,7 @@ async function refreshEmp() {
   const response = await fetch("https://randomuser.me/api/?results=5");
   const employee = await response.json();
 
-  let html = `<h3 style="text-align: center">Employee List</h3>`;
+  let html = `<h2 style="text-align: center;">Employee List</h2>`;
   employee.results.forEach((emp) => {
     html += `
         <div class="display-container">
